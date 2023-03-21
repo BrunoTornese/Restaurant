@@ -19,6 +19,14 @@ from views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ingredientes_agregar/', agregar_ingrediente, name='agregar_ingrediente'),
-    path('crear_receta/', crear_receta, name='crear_receta'),
+    path ('', inicio, name= 'inicio'),
+    path('agregar_ingredientes/', agregar_ingrediente, name= 'agregar_ingrediente'),
+    path('crear_sub_receta/', crear_sub_receta, name= 'crear_sub_receta'),
+    path('crear_receta/', crear_receta, name= 'crear_receta'),
+    path('eliminar_ingrediente/', eliminar_ingrediente, name='eliminar_ingrediente'),
+    path('eliminar_receta/', eliminar_receta, name='eliminar_receta'),
+    path('eliminar_sub_receta/', eliminar_sub_recetas, name = 'eliminar_sub_receta'),
+    path('editar_ingrediente/', editar_ingrediente, name = 'editar_sub_ingrediente'),
+    path('editar_receta/', editar_receta, name = 'editar_receta'),
+    path('editar_sub_receta/', editar_sub_receta, name = 'editar_sub_receta'),   
 ]
